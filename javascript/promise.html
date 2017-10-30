@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promise</title>
+    <style>
+        .circle {
+            width: 40px;
+            height: 40px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+        }
+
+        .circle1 {
+            background: #000;
+        }
+
+        .circle2 {
+            background: #ff2200;
+        }
+
+        .circle3 {
+            background: #ffaa00;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+    <div class="circle circle3"></div>
+</div>
+<script>
+
+    //setTimeout动画
+    window.onload = function () {
+        var circle1 = document.querySelector('.circle1');
+        var circle2 = document.querySelector('.circle2');
+        var circle3 = document.querySelector('.circle3');
+
+        function move(selector, position, callback) {
+            setTimeout(function () {
+                var marginLeft = parseInt(document.defaultView.getComputedStyle(selector, null).marginLeft, 10);
+
+                if (marginLeft === position) {
+                    callback && callback();
+                } else {
+                    if (marginLeft < position) {
+                        marginLeft++;
+                    } else {
+                        marginLeft--;
+                    }
+                    selector.style.marginLeft = marginLeft + 'px';
+                    move(selector, position, callback);
+                }
+            }, 13)
+        }
+
+        move(circle1, 100, function () {
+            move(circle2, 200, function () {
+                move(circle3, 300, function () {
+                    move(circle3, 200, function () {
+                        move(circle2, 100, function () {
+                            move(circle1, 0, function () {
+
+                            })
+                        })
+                    })
+                })
+            })
+        });
+    }
+</script>
+</body>
+</html>
