@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f6d6a9b-c00a-4430-ac2b-bcda75bfccdb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascript/promise.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/promise.html" afterPath="$PROJECT_DIR$/javascript/promise.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +20,8 @@
       <file leaf-file-name="promise.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/javascript/promise.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="62" column="55" lean-forward="true" selection-start-line="62" selection-start-column="55" selection-end-line="62" selection-end-column="55" />
+            <state relative-caret-position="210">
+              <caret line="86" column="57" lean-forward="false" selection-start-line="86" selection-start-column="57" selection-end-line="86" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -168,12 +167,12 @@
       <workItem from="1509070791718" duration="3310000" />
       <workItem from="1509155383275" duration="11858000" />
       <workItem from="1509248850121" duration="826000" />
-      <workItem from="1509331614298" duration="124000" />
+      <workItem from="1509331614298" duration="1957000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29280000" />
+    <option name="totallyTimeSpent" value="31113000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="2" width="1319" height="786" extended-state="6" />
@@ -339,8 +338,8 @@
     <entry file="file://$PROJECT_DIR$/javascript/promise.css" />
     <entry file="file://$PROJECT_DIR$/javascript/promise.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="62" column="55" lean-forward="true" selection-start-line="62" selection-start-column="55" selection-end-line="62" selection-end-column="55" />
+        <state relative-caret-position="210">
+          <caret line="86" column="57" lean-forward="false" selection-start-line="86" selection-start-column="57" selection-end-line="86" selection-end-column="57" />
           <folding />
         </state>
       </provider>

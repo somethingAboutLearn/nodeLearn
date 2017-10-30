@@ -32,44 +32,101 @@
     <div class="circle circle3"></div>
 </div>
 <script>
-
-    //setTimeout动画
     window.onload = function () {
+
+//        //setTimeout动画
+//        var circle1 = document.querySelector('.circle1');
+//        var circle2 = document.querySelector('.circle2');
+//        var circle3 = document.querySelector('.circle3');
+//
+//        function move(selector, position, callback) {
+//            setTimeout(function () {
+//                var marginLeft = parseInt(document.defaultView.getComputedStyle(selector, null).marginLeft, 10);
+//
+//                if (marginLeft === position) {
+//                    callback && callback();
+//                } else {
+//                    if (marginLeft < position) {
+//                        marginLeft++;
+//                    } else {
+//                        marginLeft--;
+//                    }
+//                    selector.style.marginLeft = marginLeft + 'px';
+//                    move(selector, position, callback);
+//                }
+//            }, 13)
+//        }
+//        //回调深渊
+//        move(circle1, 100, function () {
+//            move(circle2, 200, function () {
+//                move(circle3, 300, function () {
+//                    move(circle3, 200, function () {
+//                        move(circle2, 100, function () {
+//                            move(circle1, 0, function () {
+//
+//                            })
+//                        })
+//                    })
+//                })
+//            })
+//        });
+
+
+        //promise异步编程
         var circle1 = document.querySelector('.circle1');
         var circle2 = document.querySelector('.circle2');
         var circle3 = document.querySelector('.circle3');
 
-        function move(selector, position, callback) {
-            setTimeout(function () {
-                var marginLeft = parseInt(document.defaultView.getComputedStyle(selector, null).marginLeft, 10);
+        function promiseMove(selector, position) {
+            return new Promise(function (resolve, reject) {
+                function _move() {
+                    setTimeout(function () {
+                        var marginLeft = parseInt(document.defaultView.getComputedStyle(selector, null).marginLeft, 10);
 
-                if (marginLeft === position) {
-                    callback && callback();
-                } else {
-                    if (marginLeft < position) {
-                        marginLeft++;
-                    } else {
-                        marginLeft--;
-                    }
-                    selector.style.marginLeft = marginLeft + 'px';
-                    move(selector, position, callback);
+                        if (marginLeft === position) {
+                            resolve();      //resolve()成功时执行函数
+                        } else {
+                            if (marginLeft < position) {
+                                marginLeft++;
+                            } else {
+                                marginLeft--;
+                            }
+                            selector.style.marginLeft = marginLeft + 'px';
+                            _move();
+                        }
+                    }, 13)
                 }
-            }, 13)
+
+                _move();
+            })
         }
 
-        move(circle1, 100, function () {
-            move(circle2, 200, function () {
-                move(circle3, 300, function () {
-                    move(circle3, 200, function () {
-                        move(circle2, 100, function () {
-                            move(circle1, 0, function () {
-
-                            })
-                        })
-                    })
-                })
+        promiseMove(circle1, 100)
+            .then(function () {
+                return promiseMove(circle2, 200)        //resolved状态的回调函数
+            },function () {
+                //rejected状态的回调函数
             })
-        });
+            .then(function () {
+                return promiseMove(circle3, 300)
+            },function () {
+                
+            })
+            .then(function () {
+                return promiseMove(circle3, 200)
+            },function () {
+                
+            })
+            .then(function () {
+                return promiseMove(circle2, 100)
+            },function () {
+                
+            })
+            .then(function () {
+                return promiseMove(circle1, 0)
+            },function () {
+                
+            })
     }
 </script>
 </body>
