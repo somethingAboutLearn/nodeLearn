@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f6d6a9b-c00a-4430-ac2b-bcda75bfccdb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/promise.html" afterPath="$PROJECT_DIR$/javascript/promise.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/https/https.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/https/promise-crawler.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="promise.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/javascript/promise.html">
+      <file leaf-file-name="promise-crawler.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/https/promise-crawler.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="86" column="57" lean-forward="false" selection-start-line="86" selection-start-column="57" selection-end-line="86" selection-end-column="57" />
+              <caret line="61" column="55" lean-forward="false" selection-start-line="61" selection-start-column="55" selection-end-line="61" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -32,9 +34,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -59,6 +61,8 @@
         <option value="$PROJECT_DIR$/javascript/promise/promise.js" />
         <option value="$PROJECT_DIR$/javascript/promise.css" />
         <option value="$PROJECT_DIR$/javascript/promise.html" />
+        <option value="$PROJECT_DIR$/https/https.js" />
+        <option value="$PROJECT_DIR$/https/promise-crawler.js" />
       </list>
     </option>
   </component>
@@ -77,6 +81,7 @@
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/http/node_modules" />
+    <handled-path value="$PROJECT_DIR$/https/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="49" />
@@ -109,7 +114,12 @@
             <path>
               <item name="nodeLearn" type="b2602c69:ProjectViewProjectNode" />
               <item name="nodeLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodeLearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodeLearn" type="462c0819:PsiDirectoryNode" />
+              <item name="https" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -167,12 +177,12 @@
       <workItem from="1509070791718" duration="3310000" />
       <workItem from="1509155383275" duration="11858000" />
       <workItem from="1509248850121" duration="826000" />
-      <workItem from="1509331614298" duration="1957000" />
+      <workItem from="1509331614298" duration="13989000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31113000" />
+    <option name="totallyTimeSpent" value="43145000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="2" width="1319" height="786" extended-state="6" />
@@ -261,13 +271,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/http/reptile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="42" column="6" lean-forward="true" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/events.js" />
     <entry file="file://$PROJECT_DIR$/events/events.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -338,8 +341,32 @@
     <entry file="file://$PROJECT_DIR$/javascript/promise.css" />
     <entry file="file://$PROJECT_DIR$/javascript/promise.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-56">
+          <caret line="58" column="16" lean-forward="false" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/https/https.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http/reptile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/https/promise-crawler.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="86" column="57" lean-forward="false" selection-start-line="86" selection-start-column="57" selection-end-line="86" selection-end-column="57" />
+          <caret line="61" column="55" lean-forward="false" selection-start-line="61" selection-start-column="55" selection-end-line="61" selection-end-column="55" />
           <folding />
         </state>
       </provider>
