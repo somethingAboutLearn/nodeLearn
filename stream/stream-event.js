@@ -26,3 +26,4 @@ writeStream.on('drain', function () {       //可写流的事件 clone 事件将
     console.log('Continue...')              // error 写入数据出错或使用管道出错时触发事件，回调函数仅会接受一个 Error 参数
 })                                          // finish 在调用了 stream.end() 方法后，且缓存区的数据都传给底层系统后触发事件
                                             // pipe 在可读流上调用 stream.pipe() 方法，并在目标流向中添加当前可写流时触发事件
+                                            // unpipe 在 Readable 上调用 stream.unpipe() 方法，从目标流向中移除 Writable 时触发事件
