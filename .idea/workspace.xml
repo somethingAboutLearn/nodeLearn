@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f6d6a9b-c00a-4430-ac2b-bcda75bfccdb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/buffer/img.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/buffer/buffer.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/http/reptile.js" afterPath="$PROJECT_DIR$/https/crawler.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stream/vudio.avi" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stream/stream-event.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stream/stream.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/buffer/img-base64.png" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/buffer/img-write.png" afterPath="$PROJECT_DIR$/stream/img.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buffer/buffer.js" afterPath="$PROJECT_DIR$/buffer/buffer.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,14 +23,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="buffer.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/buffer/buffer.js">
+      <file leaf-file-name="stream-event.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/stream/stream-event.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="104" column="20" lean-forward="true" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="20" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="378">
+              <caret line="27" column="96" lean-forward="false" selection-start-line="27" selection-start-column="96" selection-end-line="27" selection-end-column="96" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -67,6 +68,8 @@
         <option value="$PROJECT_DIR$/https/https.js" />
         <option value="$PROJECT_DIR$/https/promise-crawler.js" />
         <option value="$PROJECT_DIR$/buffer/buffer.js" />
+        <option value="$PROJECT_DIR$/stream/stream.js" />
+        <option value="$PROJECT_DIR$/stream/stream-event.js" />
       </list>
     </option>
   </component>
@@ -108,7 +111,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -120,7 +123,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -141,6 +144,7 @@
       <recent name="$PROJECT_DIR$/javascript" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/stream" />
       <recent name="$PROJECT_DIR$/buffer" />
       <recent name="$PROJECT_DIR$/request" />
     </key>
@@ -174,12 +178,14 @@
       <workItem from="1509155383275" duration="11858000" />
       <workItem from="1509248850121" duration="826000" />
       <workItem from="1509331614298" duration="25002000" />
-      <workItem from="1509435422037" duration="6430000" />
+      <workItem from="1509435422037" duration="7378000" />
+      <workItem from="1509514644644" duration="2142000" />
+      <workItem from="1509524705498" duration="4214000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60588000" />
+    <option name="totallyTimeSpent" value="67892000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="2" width="1319" height="786" extended-state="6" />
@@ -216,13 +222,27 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/stream/stream.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/buffer/buffer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buffer/buffer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -383,11 +403,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/buffer/img-buffer.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/buffer/img-buffer.png" />
     <entry file="file://$PROJECT_DIR$/buffer/img-base64.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -400,11 +416,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/buffer/buffer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="104" column="20" lean-forward="true" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="20" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="14">
+          <caret line="100" column="6" lean-forward="false" selection-start-line="100" selection-start-column="6" selection-end-line="100" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stream/img-stream.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stream/stream.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="2" column="39" lean-forward="false" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stream/stream-event.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="27" column="96" lean-forward="false" selection-start-line="27" selection-start-column="96" selection-end-line="27" selection-end-column="96" />
+          <folding />
         </state>
       </provider>
     </entry>

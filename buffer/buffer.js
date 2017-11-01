@@ -110,6 +110,10 @@ fs.readFile('./img.jpg', function (error, data) {
     var base64Img = data.toString('base64')
     var writeData = new Buffer(base64Img, 'base64')
 
+    if (Buffer.compare(data, writeData) === 0) {
+        console.log('数据相同')
+    }
+
     fs.writeFile('./img-base64.png', writeData, function (error) {
         if (error) {
             throw error
